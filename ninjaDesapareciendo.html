@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="ninjaDesapareciendoCSS.css">
+    <title>Ninja Desapareciendo</title>
+</head>
+<body>
+    <div id="main">
+        <h1>Tarea Ninja desapareciendo</h1>
+        <div class="fila1">
+            <img src="triforce.jfif" alt="Imagen trifuerza 1">
+            <img src="triforce.jfif" alt="Imagen trifuerza 1">
+            <img src="triforce.jfif" alt="Imagen trifuerza 1">
+            <img src="triforce.jfif" alt="Imagen trifuerza 1">
+        </div>
+        <div class="fila2">
+            <img src="triforce2.png" alt="Imagen trifuerza 2">
+            <img src="triforce2.png" alt="Imagen trifuerza 2">
+            <img src="triforce2.png" alt="Imagen trifuerza 2">
+            <img src="triforce2.png" alt="Imagen trifuerza 2">
+        </div>
+        <div class="fila3">
+            <img src="triforce.jfif" alt="Imagen trifuerza 1">
+            <img src="triforce.jfif" alt="Imagen trifuerza 1">
+            <img src="triforce.jfif" alt="Imagen trifuerza 1">
+            <img src="triforce.jfif" alt="Imagen trifuerza 1">
+        </div>
+        <button id="btnRestaurar" class="restaurar">    restaurar Imagenes        </button>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('img').click(function(){
+                $(this).fadeOut();
+            });
+
+            $('.restaurar').click(function(){
+                $('img').fadeIn();
+            });    
+         })
+    </script>
+</body>
+</html>
